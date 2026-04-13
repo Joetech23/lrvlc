@@ -112,9 +112,9 @@ export default function Footer({ onNavigate }: FooterProps) {
             </h4>
             <ul className="space-y-4">
               {[
-                { Icon: Phone, text: '+44 (0) 000 000 0000', sub: 'Mon–Fri, 9am–5pm' },
-                { Icon: Mail, text: 'info@lrvlc.co.uk', sub: 'Reply within 24 hours' },
-                { Icon: MapPin, text: 'United Kingdom', sub: 'Nationwide service' },
+                { Icon: Phone, text: '+44 (0) 208 432 2258', sub: 'Mon–Fri, 9am–5pm' },
+                { Icon: Mail, text: 'hello@lrvlc.com', sub: 'Reply within 24 hours' },
+                { Icon: MapPin, text: 'Dartford Business Park, Victoria Road, Dartford, Kent DA1 5FS', sub: 'Nationwide service' },
               ].map(({ Icon, text, sub }) => (
                 <li key={text} className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-white/8 border border-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">

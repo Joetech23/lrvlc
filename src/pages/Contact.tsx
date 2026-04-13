@@ -50,19 +50,19 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+44 (0) 000 000 0000',
+      value: '+44 (0) 208 432 2258',
       sub: 'Mon–Fri, 9am–5pm',
     },
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@lrvlc.co.uk',
+      value: 'hello@lrvlc.com',
       sub: 'We respond within 24 hours',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'United Kingdom',
+      value: 'Dartford Business Park, Victoria Road, Dartford, Kent DA1 5FS',
       sub: 'Serving clients nationwide',
     },
     {

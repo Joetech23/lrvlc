@@ -209,7 +209,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               Get in Touch
             </button>
             <p className="text-center text-slate-400 text-xs font-light">
-              info@lrvlc.co.uk
+              hello@lrvlc.com
             </p>
           </div>
         </div>
