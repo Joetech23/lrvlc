@@ -3,7 +3,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import {
   Clock, UserCheck, FileText, Repeat,
   Stethoscope, UtensilsCrossed, Building2, User,
-  CheckCircle, ArrowRight, Zap,
+  CheckCircle, ArrowRight, Zap, Shield, Monitor, Briefcase,
 } from 'lucide-react';
 
 type Page = 'home' | 'about' | 'lineup' | 'vine' | 'contact';
@@ -24,7 +24,7 @@ const sectors = [
     icon: Stethoscope,
     title: 'Healthcare',
     colour: 'navy',
-    desc: 'Nurses, carers, support workers, and clinical staff placed across NHS and private healthcare organisations.',
+    desc: 'Nurses, carers, support workers, and clinical staff placed across public and private healthcare organisations.',
     roles: ['Registered Nurses (RN)', 'Healthcare Assistants (HCA)', 'Support Workers', 'Clinical & Allied Health'],
   },
   {
@@ -33,6 +33,27 @@ const sectors = [
     colour: 'sky',
     desc: 'Front-of-house, kitchen, management, and events staff for hotels, restaurants, and venues nationwide.',
     roles: ['Chefs & Kitchen Staff', 'Front of House', 'Hotel & Venue Management', 'Event & Banqueting Staff'],
+  },
+  {
+    icon: Shield,
+    title: 'Security',
+    colour: 'navy',
+    desc: 'Vetted, licensed security professionals for commercial, events, and residential settings across the UK.',
+    roles: ['SIA Licensed Officers', 'Door Supervisors', 'CCTV Operators', 'Close Protection'],
+  },
+  {
+    icon: Monitor,
+    title: 'Information Technology',
+    colour: 'sky',
+    desc: 'Skilled IT professionals placed on temporary, contract, or permanent basis to support your digital operations.',
+    roles: ['IT Support & Helpdesk', 'Network & Infrastructure', 'Software Developers', 'Project Managers'],
+  },
+  {
+    icon: Briefcase,
+    title: 'Corporate Solutions',
+    colour: 'navy',
+    desc: 'Professional business support across administrative, finance, HR, and management functions.',
+    roles: ['Business Administration', 'Finance & Accounts', 'HR & Compliance', 'Executive & Management'],
   },
 ];
 
@@ -90,7 +111,7 @@ export default function LineupRecruitment({ onNavigate }: LineupProps) {
                 <em className="not-italic text-[#5DADE2]">Recruitment</em>
               </h1>
               <p className="text-white/60 text-[1.05rem] font-light leading-relaxed mb-8 max-w-lg">
-                Specialist recruitment agency connecting businesses with skilled, vetted professionals across healthcare and hospitality.
+                Specialist recruitment agency connecting businesses with skilled, vetted professionals across healthcare, hospitality, security, IT, and corporate sectors.
               </p>
               <div className="flex flex-wrap gap-3">
                 <button onClick={() => onNavigate('contact')} className="btn-primary-white">
@@ -151,11 +172,11 @@ export default function LineupRecruitment({ onNavigate }: LineupProps) {
             <p className="section-label mb-3">Industries</p>
             <h2 className="display-md">Sectors We Serve</h2>
             <p className="text-slate-500 text-[0.93rem] font-light mt-4 max-w-md mx-auto">
-              Deep expertise across two high-demand sectors, delivering specialists who make an immediate impact.
+              Deep expertise across multiple high-demand sectors, delivering specialists who make an immediate impact.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sectors.map((sector, i) => (
               <div
                 key={sector.title}
@@ -235,7 +256,7 @@ export default function LineupRecruitment({ onNavigate }: LineupProps) {
               </div>
               <h3 className="font-display text-[1.8rem] text-[#0A1F44] mb-4">For Job Seekers</h3>
               <p className="text-slate-500 text-[0.93rem] leading-relaxed font-light mb-7">
-                We connect you with rewarding opportunities that match your skills, experience, and ambitions — in healthcare or hospitality.
+                We connect you with rewarding opportunities that match your skills, experience, and ambitions — across healthcare, hospitality, security, IT, and corporate sectors.
               </p>
               <ul className="space-y-2.5 mb-8">
                 {seekerBenefits.map((b) => (

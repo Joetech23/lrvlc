@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import {
   Home, Heart, Stethoscope, Users, UserCheck,
-  Leaf, CheckCircle, ArrowRight, Star, Shield,
+  Leaf, CheckCircle, ArrowRight, Star, Shield, Building2,
 } from 'lucide-react';
 
 type Page = 'home' | 'about' | 'lineup' | 'vine' | 'contact';
@@ -13,33 +13,47 @@ interface VineProps {
 
 const services = [
   {
+    icon: Building2,
+    title: 'Care Homes',
+    desc: 'We supply experienced, well-trained, and compliant staff to residential and nursing care homes across the UK.',
+    features: ['Registered Nurses & HCAs', 'Senior Care Staff', 'Night & Weekend Cover', 'Emergency Staffing'],
+    accent: 'sky',
+  },
+  {
     icon: Home,
-    title: 'Home Care',
-    desc: 'Daily support, personal care, and companionship delivered with dignity in the comfort of home.',
-    features: ['Personal care & hygiene', 'Medication management', 'Meal preparation', 'Companionship visits'],
+    title: 'Supported Living',
+    desc: 'Placing dedicated support workers into supported living accommodation for individuals with a range of needs.',
+    features: ['Support Workers', 'Key Workers', 'Day & Sleep-in Cover', 'Person-Centred Support'],
+    accent: 'navy',
+  },
+  {
+    icon: Heart,
+    title: 'Home Care & Live-in Care',
+    desc: 'We provide skilled, compassionate carers for domiciliary and live-in care packages — in the comfort of home.',
+    features: ['Live-in Carers', 'Domiciliary Care Staff', 'Personal Care Support', 'Medication Management'],
     accent: 'sky',
   },
   {
     icon: Stethoscope,
     title: 'Complex Care',
-    desc: 'Specialist care for individuals with advanced or complex medical needs — delivered by highly trained professionals.',
-    features: ['Ventilator care', 'PEG feeding support', 'Neurological conditions', 'Post-hospital recovery'],
+    desc: 'Specialist, highly trained staff placed for high-dependency and complex care packages requiring expert support.',
+    features: ['Ventilator-Trained Staff', 'PEG Feeding Support', 'Neurological Care', 'High-Dependency Support'],
     accent: 'navy',
   },
   {
-    icon: UserCheck,
-    title: 'Healthcare Staffing',
-    desc: 'Supplying trained healthcare professionals to care homes, hospitals, and community settings across the UK.',
-    features: ['Registered nurses', 'Care assistants', 'Support workers', 'Community carers'],
+    icon: Shield,
+    title: 'Mental Health Support',
+    desc: 'Experienced mental health support workers placed across community, residential, and clinical settings.',
+    features: ['Mental Health Support Workers', 'Recovery & Wellbeing Support', 'Low & Medium Secure Settings', 'Community Mental Health'],
     accent: 'sky',
   },
 ];
 
 const whoWeSupport = [
-  { icon: Users, title: 'Elderly Individuals', desc: 'Tailored care for older adults to maintain independence, comfort, and dignity at home.' },
-  { icon: Heart, title: 'People with Disabilities', desc: 'Specialist support that promotes quality of life, self-determination, and dignity.' },
-  { icon: Star, title: 'Complex Care Needs', desc: 'Expert support for high-dependency conditions requiring specialist, ongoing care.' },
-  { icon: Shield, title: 'Families & Carers', desc: 'Providing peace of mind for families — reliable care when and where it\'s needed.' },
+  { icon: Users, title: 'Individuals', desc: 'Dedicated support for individuals of all backgrounds and ages, tailored to their unique needs and circumstances.' },
+  { icon: Heart, title: 'Adults & Children', desc: 'From children with additional needs to working-age adults requiring specialist support in their daily lives.' },
+  { icon: Star, title: 'People with Disabilities', desc: 'Support workers placed with individuals living with physical, learning, or sensory disabilities.' },
+  { icon: Shield, title: 'Complex Care Needs', desc: 'Highly trained staff for high-dependency conditions — providing peace of mind for families.' },
 ];
 
 const approach = [
@@ -77,7 +91,7 @@ export default function VineLodgeCare({ onNavigate }: VineProps) {
                 <em className="not-italic text-[#5DADE2]">Care</em>
               </h1>
               <p className="text-white/60 text-[1.05rem] font-light leading-relaxed mb-8 max-w-lg">
-                Compassionate, person-centred care services and healthcare staffing - prioritising dignity, independence, and quality of life.
+                Supplying experienced, well-trained, and compliant staff across care homes, supported living, home care, complex care, and mental health settings.
               </p>
               <div className="flex flex-wrap gap-3">
                 <button onClick={() => onNavigate('contact')} className="btn-primary-white">
@@ -110,14 +124,14 @@ export default function VineLodgeCare({ onNavigate }: VineProps) {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 reveal">
             <div>
               <p className="section-label mb-3">What We Provide</p>
-              <h2 className="display-md">Our Care Services</h2>
+              <h2 className="display-md">Settings We Staff</h2>
             </div>
             <p className="text-slate-500 text-[0.93rem] font-light leading-relaxed max-w-xs lg:text-right">
-              Every service is designed around the individual — their needs, their preferences, their life.
+              We supply experienced, vetted, and compliant staff across a range of care and support settings.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((s, i) => (
               <div
                 key={s.title}

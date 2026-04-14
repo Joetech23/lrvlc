@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 type Page = 'home' | 'about' | 'lineup' | 'vine' | 'contact';
 
@@ -125,12 +125,13 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <button
-                onClick={() => handleNav('contact')}
-                className="btn-primary text-[0.8rem] px-6 py-2.5"
+              <a
+                href="tel:+442084322258"
+                className="btn-primary text-[0.8rem] px-6 py-2.5 flex items-center gap-2 no-underline"
               >
-                Get in Touch
-              </button>
+                <Phone size={14} />
+                +44 208 432 2258
+              </a>
             </div>
 
             {/* Mobile Toggle */}
@@ -202,15 +203,19 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
           {/* CTA */}
           <div className="px-4 py-5 border-t border-slate-100 space-y-3">
-            <button
-              onClick={() => handleNav('contact')}
-              className="btn-primary w-full py-3.5"
+            <a
+              href="tel:+442084322258"
+              className="btn-primary w-full py-3.5 flex items-center justify-center gap-2 no-underline"
             >
-              Get in Touch
-            </button>
-            <p className="text-center text-slate-400 text-xs font-light">
+              <Phone size={15} />
+              +44 208 432 2258
+            </a>
+            <a
+              href="mailto:hello@lrvlc.com"
+              className="block text-center text-[#5DADE2] text-xs font-medium no-underline hover:text-[#0A1F44] transition-colors"
+            >
               hello@lrvlc.com
-            </p>
+            </a>
           </div>
         </div>
       </div>

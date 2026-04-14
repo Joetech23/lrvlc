@@ -83,7 +83,7 @@ const testimonials = [
   },
   {
     quote: "Lineup Recruitment consistently delivers exceptional healthcare professionals. The vetting is thorough and we always get staff we can trust.",
-    name: 'NHS Partner Organisation',
+    name: 'Healthcare Organisation',
     location: 'West Midlands',
     initials: 'N',
   },
@@ -122,7 +122,7 @@ const process = [
 /* ── Services ──────────────────────────────────────────── */
 const services = [
   { icon: Briefcase,    title: 'Recruitment Solutions', desc: 'Temporary, permanent, and contract staffing across healthcare and hospitality.', tag: 'Lineup Recruitment' },
-  { icon: Stethoscope,  title: 'Healthcare Staffing',   desc: 'Qualified nurses, carers, and support workers for care homes and NHS facilities.', tag: 'Both' },
+  { icon: Stethoscope,  title: 'Healthcare Staffing',   desc: 'Qualified nurses, carers, and support workers for care homes and healthcare providers.', tag: 'Both' },
   { icon: HomeIcon,     title: 'Home Care Services',    desc: 'Personalised, compassionate care delivered in the comfort of home.',           tag: 'Vine Lodge Care' },
   { icon: Heart,        title: 'Complex Care',           desc: 'Specialist support for individuals with advanced medical or high-dependency needs.', tag: 'Vine Lodge Care' },
 ];
@@ -432,7 +432,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-7 bg-[#F8F9FC] border-b border-slate-100 overflow-hidden">
         <div className="marquee-track">
           {[...Array(2)].map((_, setI) =>
-            ['NHS Partners', 'Care Quality Commission', 'DBS Checked Staff', 'UK Nationwide', 'CQC Compliant', 'REC Member', '24/7 Emergency Cover', 'Registered Organisation', 'NHS Partners', 'Care Quality Commission', 'DBS Checked Staff', 'UK Nationwide']
+            ['Recruitment Solutions', 'Healthcare Staffing', 'Home Care Services', 'Complex Care', 'Temporary & Contract Staffing', 'Qualified Nurses & Carers', 'Personalised Home Care', 'Specialist Support', 'DBS Checked Staff', 'UK Nationwide', 'REC Member', '24/7 Emergency Cover']
               .map((item, i) => (
                 <div key={`${setI}-${i}`} className="flex items-center gap-3 flex-shrink-0">
                   <span className="w-1 h-1 rounded-full bg-[#5DADE2]" />
