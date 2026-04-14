@@ -232,6 +232,7 @@ export default function Contact() {
                             required
                             className="input-premium"
                           >
+                            <option value="General Enquiry">General Enquiry</option>
                             <option value="">Select a service...</option>
                             <optgroup label="Lineup Recruitment">
                               <option value="Temporary Staffing">Temporary Staffing</option>
@@ -245,7 +246,6 @@ export default function Contact() {
                               <option value="Complex Care">Complex Care</option>
                               <option value="Healthcare Staffing">Healthcare Staffing</option>
                             </optgroup>
-                            <option value="General Enquiry">General Enquiry</option>
                           </select>
                         </div>
                       </div>
