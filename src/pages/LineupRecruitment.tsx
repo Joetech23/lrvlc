@@ -82,11 +82,7 @@ export default function LineupRecruitment({ onNavigate }: LineupProps) {
             {/* Left */}
             <div className="pb-16">
               <div className="flex items-center gap-3 mb-6">
-                <img
-                  src="https://res.cloudinary.com/dx2bbdxnw/image/upload/v1775920542/lineup-recruitmentIMG_2897.JPG_gabx1k.jpg"
-                  alt="Lineup Recruitment"
-                  className="h-10 w-auto object-cover rounded-lg opacity-90"
-                />
+
                 <span className="text-[#5DADE2] text-[0.65rem] font-semibold tracking-[0.2em] uppercase">Division One</span>
               </div>
               <h1 className="font-display text-[4rem] md:text-[5rem] text-white leading-[1.05] tracking-tight mb-5">

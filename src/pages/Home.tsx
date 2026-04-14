@@ -121,10 +121,10 @@ const process = [
 
 /* ── Services ──────────────────────────────────────────── */
 const services = [
-  { icon: Briefcase,    title: 'Recruitment Solutions', desc: 'Temporary, permanent, and contract staffing across healthcare and hospitality.', tag: 'Lineup' },
+  { icon: Briefcase,    title: 'Recruitment Solutions', desc: 'Temporary, permanent, and contract staffing across healthcare and hospitality.', tag: 'Lineup Recruitment' },
   { icon: Stethoscope,  title: 'Healthcare Staffing',   desc: 'Qualified nurses, carers, and support workers for care homes and NHS facilities.', tag: 'Both' },
-  { icon: HomeIcon,     title: 'Home Care Services',    desc: 'Personalised, compassionate care delivered in the comfort of home.',           tag: 'Vine Lodge' },
-  { icon: Heart,        title: 'Complex Care',           desc: 'Specialist support for individuals with advanced medical or high-dependency needs.', tag: 'Vine Lodge' },
+  { icon: HomeIcon,     title: 'Home Care Services',    desc: 'Personalised, compassionate care delivered in the comfort of home.',           tag: 'Vine Lodge Care' },
+  { icon: Heart,        title: 'Complex Care',           desc: 'Specialist support for individuals with advanced medical or high-dependency needs.', tag: 'Vine Lodge Care' },
 ];
 
 /* ══════════════════════════════════════════════════════ */

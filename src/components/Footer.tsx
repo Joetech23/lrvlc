@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin, Instagram, Music } from 'lucide-react';
 
 type Page = 'home' | 'about' | 'lineup' | 'vine' | 'contact';
 
@@ -26,26 +26,23 @@ export default function Footer({ onNavigate }: FooterProps) {
 
           {/* Brand column */}
           <div className="lg:col-span-4">
-            <img
-              src="https://res.cloudinary.com/dx2bbdxnw/image/upload/v1775920583/full-logo--lineup--_bk01pq.png"
-              alt="LRVLC"
-              className="h-12 w-auto object-contain mb-5 opacity-95"
-            />
+            <div className="text-xl font-bold mb-5" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              <span className="text-white">Lineup Recruitment</span> <span className="text-[#5DADE2]">& Vine Lodge Care</span>
+            </div>
             <p className="text-slate-300 text-[0.9rem] leading-relaxed mb-6 max-w-xs font-light">
-              A UK dual-service organisation connecting talent and delivering compassionate care — with integrity and professionalism.
+              A UK dual-service organisation connecting talent and delivering compassionate care, with integrity and professionalism.
             </p>
 
             {/* Social icons */}
             <div className="flex gap-2.5">
               {[
-                { Icon: Linkedin, label: 'LinkedIn' },
-                { Icon: Twitter, label: 'Twitter' },
-                { Icon: Facebook, label: 'Facebook' },
-                { Icon: Instagram, label: 'Instagram' },
-              ].map(({ Icon, label }) => (
+                { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/lrvlc_?igsh=ZmR3aXprY3M4c2s0&utm_source=qr' },
+                { Icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/company/lrvlc/' },
+                { Icon: Music, label: 'TikTok', href: 'https://www.tiktok.com/@lrvlc_' },
+              ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
                   aria-label={label}
                   className="w-9 h-9 rounded-lg bg-white/10 border border-white/15 flex items-center justify-center hover:bg-[#5DADE2] hover:border-[#5DADE2] transition-all duration-250"
                 >

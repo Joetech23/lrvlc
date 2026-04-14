@@ -69,11 +69,7 @@ export default function VineLodgeCare({ onNavigate }: VineProps) {
             {/* Left */}
             <div className="pb-16">
               <div className="flex items-center gap-3 mb-6">
-                <img
-                  src="https://res.cloudinary.com/dx2bbdxnw/image/upload/v1775920584/vlc-lr1_w13kcf.jpg"
-                  alt="Vine Lodge Care"
-                  className="h-10 w-auto object-cover rounded-lg opacity-90"
-                />
+                
                 <span className="text-[#5DADE2] text-[0.65rem] font-semibold tracking-[0.2em] uppercase">Division Two</span>
               </div>
               <h1 className="font-display text-[4rem] md:text-[5rem] text-white leading-[1.05] tracking-tight mb-5">
@@ -81,7 +77,7 @@ export default function VineLodgeCare({ onNavigate }: VineProps) {
                 <em className="not-italic text-[#5DADE2]">Care</em>
               </h1>
               <p className="text-white/60 text-[1.05rem] font-light leading-relaxed mb-8 max-w-lg">
-                Compassionate, person-centred care services and healthcare staffing — prioritising dignity, independence, and quality of life.
+                Compassionate, person-centred care services and healthcare staffing - prioritising dignity, independence, and quality of life.
               </p>
               <div className="flex flex-wrap gap-3">
                 <button onClick={() => onNavigate('contact')} className="btn-primary-white">

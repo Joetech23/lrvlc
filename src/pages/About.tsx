@@ -198,7 +198,7 @@ export default function About({ onNavigate }: AboutProps) {
                 <img
                   src="https://res.cloudinary.com/dx2bbdxnw/image/upload/v1775920542/lineup-recruitmentIMG_2897.JPG_gabx1k.jpg"
                   alt="Lineup Recruitment"
-                  className="h-10 w-auto object-cover rounded-lg mb-5 opacity-90"
+                  className="h-12 w-auto object-contain rounded-lg mb-5 self-start"
                 />
                 <p className="text-white/60 text-[0.9rem] font-light leading-relaxed flex-1 mb-6">
                   Recruitment specialists connecting businesses with exceptional healthcare and hospitality professionals.
