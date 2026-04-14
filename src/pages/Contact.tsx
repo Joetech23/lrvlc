@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-import { supabase } from '../lib/supabase';
 import { Phone, Mail, MapPin, CheckCircle, AlertCircle, Send, Clock } from 'lucide-react';
 
 export default function Contact() {
@@ -29,16 +28,20 @@ export default function Contact() {
     e.preventDefault();
     setStatus('loading');
     try {
-      const { error } = await supabase.from('contact_submissions').insert([
-        {
+      const res = await fetch('https://formsubmit.co/ajax/hello@lrvlc.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          _subject: `New enquiry from ${form.name} — ${form.service || 'General'}`,
           name: form.name,
           email: form.email,
-          phone: form.phone,
+          phone: form.phone || 'Not provided',
           service: form.service,
           message: form.message,
-        },
-      ]);
-      if (error) throw error;
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok || data.success !== 'true') throw new Error();
       setStatus('success');
       setForm({ name: '', email: '', phone: '', service: '', message: '' });
     } catch {
