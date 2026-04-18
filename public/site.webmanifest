@@ -1,0 +1,21 @@
+{
+  "name": "LRVLC – Lineup Recruitment & Vine Lodge Care",
+  "short_name": "LRVLC",
+  "description": "Expert recruitment and compassionate care services across the UK.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1F44",
+  "theme_color": "#0A1F44",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/dx2bbdxnw/image/upload/v1776526933/LRVLC-Favicon_o8zpuw.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://res.cloudinary.com/dx2bbdxnw/image/upload/v1776526933/LRVLC-Favicon_o8zpuw.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
