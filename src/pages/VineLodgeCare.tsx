@@ -172,7 +172,7 @@ export default function VineLodgeCare({ onNavigate }: VineProps) {
             <div className="reveal-left relative">
               <div className="image-frame aspect-[4/5] max-w-md">
                 <img
-                  src="https://images.pexels.com/photos/8942991/pexels-photo-8942991.jpeg?auto=compress&cs=tinysrgb&w=700"
+                  src="https://res.cloudinary.com/dx2bbdxnw/image/upload/v1776682714/alamy_B3XB6P_i9hm6a.jpg"
                   alt="Person-centred care"
                   className="img-cover"
                 />
