@@ -124,7 +124,7 @@ export default function VineLodgeCare({ onNavigate }: VineProps) {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 reveal">
             <div>
               <p className="section-label mb-3">What We Provide</p>
-              <h2 className="display-md">Settings We Staff</h2>
+              <h2 className="display-md">Healthcare Settings</h2>
             </div>
             <p className="text-slate-500 text-[0.93rem] font-light leading-relaxed max-w-xs lg:text-right">
               We supply experienced, vetted, and compliant staff across a range of care and support settings.

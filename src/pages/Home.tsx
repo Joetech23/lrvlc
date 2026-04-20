@@ -22,7 +22,7 @@ const heroSlides = [
       { label: 'Find Work', page: 'lineup' as Page, style: 'outline' },
       { label: 'Request Care', page: 'vine' as Page, style: 'sky' },
     ],
-    image: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&w=1400',
+    image: 'https://res.cloudinary.com/dx2bbdxnw/image/upload/v1776669253/alamy_ERDY95_fjklmp.jpg',
     stat1: { value: '500+', label: 'Professionals Placed' },
     stat2: { value: '98%', label: 'Client Satisfaction' },
   },
@@ -432,7 +432,7 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="py-7 bg-[#F8F9FC] border-b border-slate-100 overflow-hidden">
         <div className="marquee-track">
           {[...Array(2)].map((_, setI) =>
-            ['Recruitment Solutions', 'Healthcare Staffing', 'Home Care Services', 'Complex Care', 'Temporary & Contract Staffing', 'Qualified Nurses & Carers', 'Personalised Home Care', 'Specialist Support', 'DBS Checked Staff', 'UK Nationwide', 'REC Member', '24/7 Emergency Cover']
+            ['Recruitment Solutions', 'Healthcare Staffing', 'Home Care Services', 'Complex Care', 'Temporary & Contract Staffing', 'Qualified Nurses & Carers', 'Personalised Home Care', 'Specialist Support', 'Compliant and Vetted Staff', 'UK Nationwide', '24/7 Emergency Cover']
               .map((item, i) => (
                 <div key={`${setI}-${i}`} className="flex items-center gap-3 flex-shrink-0">
                   <span className="w-1 h-1 rounded-full bg-[#5DADE2]" />
